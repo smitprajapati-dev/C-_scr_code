@@ -1,0 +1,214 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // This is comment means this line will not execute in program
+            /*THis is multiline comment 
+             * so in ever line it not execute 
+             * between these two quotes
+             */
+
+            // int smitAge = 21;// Integer variable
+            /* 
+             Data Types in C#
+            Integer - int no decimal number only number -->4 bytes
+            Float point(decimal) number - like 23.13 -->4 bytes
+            Long long smit = 23; --> 8 bytes It stores big number 
+            Double double db = 212; --> 8 bytes it also store big number
+            Character - char a = 'A'; --> 2 bytes
+            Boolean - bool isGreat = true; or it will false --> 1 bit 
+            string inp = "Smit"; --> 2 bytes per character
+
+             */
+            //long lng = 23;
+            //string inp = Console.ReadLine();
+            //Console.WriteLine(inp);
+            //Console.WriteLine("Hey It is Smit Prajapati and my age is" + smitAge);
+            //Console.WriteLine("Smit Prajapati");
+            //Console.Write("Hello Smit");
+            //Console.WriteLine("I love C#");
+
+            //int a = 23;
+            //float b = 23.4f; // We have to write f at the end of number
+            //double d = 241.12D; // We also have to write D at the end of number 
+            //bool great = true;
+            //char c = 'a';
+            //string str = "smit";
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            //Console.WriteLine(d);
+            //Console.WriteLine(great);
+            //Console.WriteLine(c);
+            //Console.WriteLine(str);
+
+
+            // Type Casting
+            // There are two type of Casting
+            // Implicit Casting
+            // char to int to long to float to double 
+            //int x = 23;
+            //double y = x; // which means this automatically cast int into double
+            //int z = 'y'; // It will show 121 because y ASCII value is 121
+            //Console.WriteLine(z);
+            //double m = 3;
+            //int n = m; // This not possible because we can't convert double into int
+            //Console.WriteLine(y);
+            //Console.WriteLine(x);
+
+            // Explicit Casting
+            // In explicit casting we have to tell we need to convert from on data type to another data type
+            //int a = (int)23.3;
+            //Console.WriteLine(a);
+            // Converting data type with the help of methods
+            //float f = Convert.ToInt32(2.321);
+            ////int n = Convert.ToDouble(f);
+            //String j = Convert.ToString(f);
+            //Console.WriteLine(j);
+            ////Console.WriteLine(n);
+            //Console.WriteLine(f);
+
+            //Console.WriteLine("Enter Your Name");
+            //String name = Console.ReadLine();
+            //Console.WriteLine("Hey Hello " + name);
+            //Console.Write("How many Candies do you want : ");
+            //String can = Console.ReadLine();
+            //Console.Write("You will get: " + 
+            //    (Convert.ToInt32(can) + 4));
+            // Operators in C#
+            // There 4 types of operators in C#
+            // 1) Arithmetic Operators
+            /* 
+             + addition Adds together two values = x + y
+             - Subtraction  Subtraction  one value from another = x - y
+             * Multiplication multiplies two value = x * y
+             / Division divides one value by another = x / y
+             % Modules  Returns the division reminder = x % y
+             ++ Increment Increases the value of a variable by 1  = x++
+             -- Decrement Decrease the value of a variable by 1 = x--        
+             */
+            // 2) Assignment Operators
+            /* 
+             =	x = 5	x = 5	
+            +=	x += 3	x = x + 3	
+            -=	x -= 3	x = x - 3	
+            *=	x *= 3	x = x * 3	
+            /=	x /= 3	x = x / 3	
+            %=	x %= 3	x = x % 3	
+            &=	x &= 3	x = x & 3	
+            |=	x |= 3	x = x | 3	
+            ^=	x ^= 3	x = x ^ 3	
+            >>=	x >>= 3	x = x >> 3	
+            <<=	x <<= 3	x = x << 3
+         */
+            // 3) Logical operators
+            /* 
+             Console.WriteLine(true && false);// It will return false because in && operator we need two true so we get true
+             Console.WriteLine(true && true); // it will return true
+             Console.WriteLine(false && false); // it will return false because both the condition is false
+
+
+
+             Console.WriteLine(true || false); // It will return true in or operator one condition need to be true
+             Console.WriteLine(true || true); // it return true because on condition is true
+             Console.WriteLine(false || false); // it return false because both the condition is false
+             
+             Console.WriteLine(!false); // It return true because it convert false into true
+             Console.WriteLine(!true); // Same goes for true it convert true into false
+
+
+             */
+
+            // 4) Comparison Operator
+
+            /* 
+             Console.WriteLine(333<555) It return true because 555 is bigger than 333
+             Console.WriteLine(333<=555) Same goes for <=
+             Console.WriteLine(333>555) It return false because 333 it less than 555
+             Console.WriteLine(333=>555) It return false 
+             Console.WriteLine(333!=555) It return true because 333 is not(!) equal(=) to 555
+             Console.WriteLine(333 == 555) It return false because the value is not same
+             */
+            //int m = Math.Max(23, 151); // It gives max(big) value of bracket
+            //int n = Math.Min(23, 151); // It gives min(small) value of bracket
+            //Console.WriteLine(m);
+            //Console.WriteLine(n);
+
+            // double m = Math.Sqrt(144);// It gives square root of value in bracket
+            //double m = Math.Abs(-42); // It convert value from negative into positive
+            //Console.WriteLine(m);
+
+            //String st = "Smit Prajapati";
+            //Console.WriteLine(st.Length);// It shows length of string
+            //Console.WriteLine(st.ToUpper()); // It converts all letter into upper case
+            //Console.WriteLine(st.ToLower()); // It converts all letter into lower case
+            //Console.WriteLine(String.Concat(st, "How are you")); // It joints two strings
+
+            //String name = Console.ReadLine();
+            //String Role = Console.ReadLine();
+            //Console.WriteLine($"My name is {name}, and I'm a {Role}");
+
+            //String stn = "Hey Smit! how are you";
+            ////Console.WriteLine(stn[0]); // String indexing always starts with zero(0)
+            //Console.WriteLine(stn.IndexOf("Smit"));
+            //Console.WriteLine(stn.Substring(4));
+            //Console.WriteLine("Enter your age: ");
+
+            //String ageStr = Console.ReadLine();
+            //int age = Convert.ToInt32(ageStr);
+            //if(age < 2)
+            //{
+            //    Console.WriteLine("You are just born");
+            //}
+            //else if( age < 10)
+            //{
+            //    Console.WriteLine("First of all finish the school");
+            //}
+            //else if(age < 18)
+            //{
+            //    Console.WriteLine("You can not drive because you are under 18");
+            //}
+            //else if(age < 75)
+            //{
+            //    Console.WriteLine("You can drive");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You can drive but it's not safe now");
+            //}
+            Console.WriteLine("Please Enter your Age: ");
+            String stn = Console.ReadLine();
+            int age = Convert.ToInt32(stn);
+            switch (age)
+            {
+                case 18:
+                    Console.WriteLine("Please wait for an year to drive");
+                    break;
+                case 20:
+                    Console.WriteLine("You are eligible to drive");
+                    break;
+                case 22:
+                    Console.WriteLine("You are now adult to get married or job");
+                    break;
+                case 35:
+                    Console.WriteLine("You can have now kids if you want");
+                    break;
+                case 60:
+                    Console.WriteLine("You can now retire from responsibility");
+                    break;
+                default:
+                    Console.WriteLine("You live good life for");
+                    break;
+            }
+            Console.ReadLine();
+        }
+    }
+}
