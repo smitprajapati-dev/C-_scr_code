@@ -9,6 +9,10 @@ namespace FirstApp
 {
     internal class Program
     {
+        static void greet()
+        {
+            Console.WriteLine("Hello! how are you")
+        }
         static void Main(string[] args)
         {
             // This is comment means this line will not execute in program
@@ -184,30 +188,57 @@ namespace FirstApp
             //{
             //    Console.WriteLine("You can drive but it's not safe now");
             //}
-            Console.WriteLine("Please Enter your Age: ");
-            String stn = Console.ReadLine();
-            int age = Convert.ToInt32(stn);
-            switch (age)
-            {
-                case 18:
-                    Console.WriteLine("Please wait for an year to drive");
-                    break;
-                case 20:
-                    Console.WriteLine("You are eligible to drive");
-                    break;
-                case 22:
-                    Console.WriteLine("You are now adult to get married or job");
-                    break;
-                case 35:
-                    Console.WriteLine("You can have now kids if you want");
-                    break;
-                case 60:
-                    Console.WriteLine("You can now retire from responsibility");
-                    break;
-                default:
-                    Console.WriteLine("You live good life for");
-                    break;
-            }
+            //Console.WriteLine("Please Enter your Age: ");
+            //String stn = Console.ReadLine();
+            //int age = Convert.ToInt32(stn);
+            //switch (age)
+            //{
+            //    case 18:
+            //        Console.WriteLine("Please wait for an year to drive");
+            //        break;
+            //    case 20:
+            //        Console.WriteLine("You are eligible to drive");
+            //        break;
+            //    case 22:
+            //        Console.WriteLine("You are now adult to get married or job");
+            //        break;
+            //    case 35:
+            //        Console.WriteLine("You can have now kids if you want");
+            //        break;
+            //    case 60:
+            //        Console.WriteLine("You can now retire from responsibility");
+            //        break;
+            //    default:
+            //        Console.WriteLine("You live good life for");
+            //        break;
+            // }
+
+            // Loops in C#
+            //int num = 0;
+            //while(num < 5)
+            //{
+            //    Console.WriteLine(num + 1);
+            //    num++;
+            //}
+            //do
+            //{
+            //    Console.WriteLine(num);
+            //    num++;
+            //} while (num < 5);
+            //for(int i = 0;i < 10; i++)
+            //{
+            //    //if(i == 4)
+            //    //{
+            //    //break; it will leave loop forever// Break means it will break the loop where we target the value
+            //    //continue; it will leave value // Means when the value 4 comes it will ignore the this value and continue from next
+            //    //}
+            //    Console.WriteLine(i);
+
+            //}
+            // Break and Continue
+
+
+            greet();
             Console.ReadLine();
         }
     }
